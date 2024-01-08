@@ -58,9 +58,9 @@ https://004134777362.signin.aws.amazon.com/console
 
 TERRAFORM_user
 
-agSq1@+]
+password : ..........
 
-Terraformuser$999
+[login details](<images/iam credentials.txt>)
 
 ![created user](<images/user created.jpg>)
 
