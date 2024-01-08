@@ -66,13 +66,15 @@ password : ..........
 
 ![new user](<images/new user.jpg>)
 
+---
 
+![access key](<images/create access key.jpg>)
 
+![cli key](<images/cli access key.jpg>)
 
+![create key](<images/create key.jpg>)
 
-
-
-
+![id and password](images/id.jpg)
 
 
 
