@@ -40,6 +40,13 @@ https://docs.python.org/3.12/using/windows.html
 https://docs.python.org/3.12/whatsnew/3.12.html
 https://github.com/boto/boto3
 ```
+# what is an SDK
+> SDK stands for Software Development Kit. It contains a set of preconfigured tools and libraries.
+
+# what is Boto3
+
+> Boto3 allows us to write Python code that interacts with AWS services. It acts like an intermidiary between aus and the service we want to manage. It contains easy-to-use APIs to many AWS services.
+
 
 # Creating an IAM user
 
@@ -76,5 +83,31 @@ password : ..........
 ---
 ![id and password](images/id.jpg)
 ---
+
+
+# Installing AWS CLI
+
+![Alt text](<images/cli get started.jpg>)
+---
+![Alt text](<images/cli install.jpg>)
+---
+![Alt text](<images/run cli.jpg>)
+---
+![Alt text](<images/aws cli.jpg>)
+---
+
+```
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+```
+---
+![accessed aws cli](images/accessed.jpg)
+
+
+
+
+
+
+
+
 
 
