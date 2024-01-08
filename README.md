@@ -1,6 +1,5 @@
 # Automating-AWS-infrastructure-in-code-Terraform-
-
-[![MasterHead](images/New_Project.png)](https://www.linkedin.com/in/armstrong-uzoagwa-devops/)![Alt text](<images/>)New Project.png
+![header](<images/New Project.png>)
 
 Automate your AWS infrastructure provisioning and management using Terraform in this project, enabling efficient and scalable deployment of resources with code
 Getting started with best practices
