@@ -41,5 +41,36 @@ https://docs.python.org/3.12/whatsnew/3.12.html
 https://github.com/boto/boto3
 ```
 
+# Creating an IAM user
+
+![iam](<images/iam - Copy.jpg>)
+
+![user](<images/user - Copy.jpg>)
+
+![terraform user](<images/user terraform - Copy.jpg>)
+
+![admin access](<images/admin access.jpg>)
+
+![iam user](<images/iam user.jpg>)
+
+
+https://004134777362.signin.aws.amazon.com/console
+
+TERRAFORM_user
+
+agSq1@+]
+
+![created user](<images/user created.jpg>)
+
+
+
+
+
+
+
+
+
+
+
 
 
