@@ -60,9 +60,11 @@ TERRAFORM_user
 
 agSq1@+]
 
+Terraformuser$999
+
 ![created user](<images/user created.jpg>)
 
-
+![new user](<images/new user.jpg>)
 
 
 
