@@ -102,6 +102,24 @@ msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ---
 ![accessed aws cli](images/accessed.jpg)
 
+# Create S3 bucket
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
