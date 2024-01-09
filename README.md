@@ -148,20 +148,30 @@ Must include the following suffix: --azid--x-s3.
 
 A suffix is automatically added to the base name that you provide. This suffix includes the Availability Zone ID of the Availability Zone that you chose.
 ```
-
+---
 
 
 We will use this bucket from Project-17 onwards.
 
+![s3](images/s3.jpg)
 
+![s3 name](<images/s3 name.jpg>)
 
+![s3 create](<images/create s3.jpg>)
 
+![s3 created](<images/bucket created.jpg>)
+---
 
+## Make sure you can programmatically access your AWS account 
 
+by running following commands in >python:
 
-
-
-
+```
+import boto3
+s3 = boto3.resource('s3')
+for bucket in s3.buckets.all():
+    print(bucket.name)
+```
 
 
 
