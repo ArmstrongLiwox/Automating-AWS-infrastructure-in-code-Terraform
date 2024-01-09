@@ -104,7 +104,54 @@ msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 
 # Create S3 bucket
 
+Create an S3 bucket to store Terraform state file.
 
+```armstrong-dev-terraform-bucket```
+
+S3 bucket names must be unique unique within a region partition.
+ 
+you can read about S3 bucken naming in this article - 
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html
+
+
+## General purpose buckets naming rules
+The following naming rules apply for general purpose buckets.
+```
+Bucket names must be between 3 (min) and 63 (max) characters long.
+
+Bucket names can consist only of lowercase letters, numbers, dots (.), and hyphens (-).
+
+Bucket names must begin and end with a letter or number.
+
+Bucket names must not contain two adjacent periods.
+
+Bucket names must not be formatted as an IP address (for example, 192.168.5.4).
+
+Bucket names must not start with the prefix xn--.
+
+Bucket names must not start with the prefix sthree- and the prefix sthree-configurator.
+
+Bucket names must not end with the suffix -s3alias. This suffix is reserved for access point alias names
+```
+## Directory bucket naming rules
+Directory bucket names must:
+```
+Be unique within the chosen AWS Region and Availability Zone.
+
+Be no more than 3–63 characters long, including the suffix.
+
+Consists only of lowercase letters, numbers and hyphens (-).
+
+Begin and end with a letter or number.
+
+Must include the following suffix: --azid--x-s3.
+
+A suffix is automatically added to the base name that you provide. This suffix includes the Availability Zone ID of the Availability Zone that you chose.
+```
+
+
+
+We will use this bucket from Project-17 onwards.
 
 
 
