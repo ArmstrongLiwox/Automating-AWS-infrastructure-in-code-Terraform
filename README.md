@@ -167,19 +167,35 @@ We will use this bucket from Project-17 onwards.
 by running following commands in >python:
 
 ```
-import boto3
+
 s3 = boto3.resource('s3')
 for bucket in s3.buckets.all():
     print(bucket.name)
 ```
+![python](images/python.jpg)
+
+```
+pip install boto3
+```
+![install boto3](<images/pip install boto3.jpg>)
+---
+```
+python.exe -m pip install --upgrade pip
+```
+![upgrade pip](<images/upgrade pip.jpg>)
+---
+```
+import boto3
+```
+```
+import json
+```
+---
+![import boto3](<images/import boto3.jpg>)
 
 
-
-
-
-
-
-
+import boto3
+s3 = boto3.resource('s3')
 
 
 
