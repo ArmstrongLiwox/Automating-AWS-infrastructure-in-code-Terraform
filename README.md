@@ -202,8 +202,42 @@ aws configure
 ```
 
 ```
-~/.aws/credentials
+cat ~/.aws/credentials
 ```
 
 print(bucket.name)
+
+The terraform glossary shows brief definitions of some of the technical terms used in the documentation for Terraform, as well as some terms that come up frequently in conversations throughout the Terraform community.
+
+## Terraform specific terminology
+> These are Terraform-specific terminology, such as:
+
+[Attribute,
+Resource,
+Interpolations,
+Argument,
+Providers,
+Provisioners,
+Input Variables,
+Output Variables,
+Module,
+Data Source,
+Local Values,
+Backend.](https://developer.hashicorp.com/terraform/docs/glossary)
+
+## Data Type
+
+Data type is a general programing concept, it refers to how data represented in a programming language and defines how a compiler or interpreter can use the data. Common data types are:
+
+$$
+Integer,
+Float,
+String,
+Boolean, etc.
+$$
+
+## Best practices
+1. Ensure that every resource is tagged using multiple key-value pairs. You will see this in action as we go along.
+
+2. Try to write reusable code, avoid hard coding values wherever possible. (For learning purpose, we will start by hard coding, but gradually refactor our work to follow best practices).
 
