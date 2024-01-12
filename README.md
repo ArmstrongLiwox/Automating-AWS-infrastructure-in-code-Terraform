@@ -225,6 +225,59 @@ Data Source,
 Local Values,
 Backend.](https://developer.hashicorp.com/terraform/docs/glossary)
 
+
+## Configuration Syntax
+
+The syntax of Terraform configurations is called HashiCorp Configuration Language (HCL). 
+It is meant to strike a balance between human readable and editable as well as being machine-friendly. 
+For machine-friendliness, Terraform can also read JSON configurations. 
+For general Terraform configurations, however, we recommend using the HCL Terraform syntax.
+
+> The Terraform language syntax is built around two key syntax constructs: *arguments and blocks.*
+
+- Arguments
+
+An argument assigns a value to a particular name:
+```image_id = "abc123"```
+
+The identifier before the equals sign is the argument name, and the expression after the equals sign is the argument's value
+
+- Blocks
+A block is a container for other content:
+```resource "aws_instance" "example" {
+  ami = "abc123"
+
+  network_interface {
+    # ...
+  }
+}
+```
+$$
+A block has a type (resource in this example). Each block type defines how many labels must follow the type keyword. The resource block type expects two labels, which are aws_instance and example in the example above. A particular block type may have any number of required labels, or it may require none as with the nested network_interface block type.
+
+After the block type keyword and any labels, the block body is delimited by the { and } characters. Within the block body, further arguments and blocks may be nested, creating a hierarchy of blocks and their associated arguments.
+
+The Terraform language uses a limited number of top-level block types, which are blocks that can appear outside of any other block in a configuration file. Most of Terraform's features (including resources, input variables, output values, data sources, etc.) are implemented as top-level blocks.
+$$
+
+
+
+
+## Local values
+
+A local value assigns a name to an expression, so you can use it multiple times within a module without repeating it.
+
+If you're familiar with traditional programming languages, it can be useful to compare Terraform modules to function definitions:
+
+*Input variables* are like function arguments.
+*Output values* are like function return values.
+*Local values* are like a function's temporary local variables.
+
+*Note:* For brevity, local values are often referred to as just "locals" when the meaning is clear from context.
+
+## Backend
+The part of Terraform's core that determines how Terraform stores state and performs operations (like plan, apply, import, etc.).
+
 ## Data Type
 
 Data type is a general programing concept, it refers to how data represented in a programming language and defines how a compiler or interpreter can use the data. Common data types are:
@@ -240,4 +293,55 @@ $$
 1. Ensure that every resource is tagged using multiple key-value pairs. You will see this in action as we go along.
 
 2. Try to write reusable code, avoid hard coding values wherever possible. (For learning purpose, we will start by hard coding, but gradually refactor our work to follow best practices).
+
+# Base Infrastructure Automation (VPC | Subnets | Security Groups)
+
+We will create a directory structure via Visual Studio Code:
+
+1. Create a folder called PBL
+
+2. Create a file in the folder, name it main.tf
+---
+![main.tf file](images/main.tf.jpg)
+---
+### Provider and VPC resource section
+
+> Set up Terraform CLI as per this instruction.
+
+1. Add AWS as a provider, and a resource to create a VPC in the main.tf file.
+
+2. Provider block informs Terraform that we intend to build infrastructure within AWS.
+
+3. Resource block will create a VPC.
+
+```
+provider "aws" {
+  region = "eu-central-1"
+}
+
+# Create VPC
+resource "aws_vpc" "main" {
+  cidr_block                     = "172.16.0.0/16"
+  enable_dns_support             = "true"
+  enable_dns_hostnames           = "true"
+  enable_classiclink             = "false"
+  enable_classiclink_dns_support = "false"
+
+}
+```
+
+---
+![main.tf content](<images/main.tf 2.jpg>)
+---
+
+![terraform download](<images/terraform download.jpg>)
+
+
+
+
+
+
+
+
+
 
