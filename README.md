@@ -41,11 +41,11 @@ https://docs.python.org/3.12/whatsnew/3.12.html
 https://github.com/boto/boto3
 ```
 # what is an SDK
-> SDK stands for Software Development Kit. It contains a set of preconfigured tools and libraries.
+> SDK stands for Software Development Kit. It contains a set of preconfigured tools and libraries. The AWS SDK for Python (Boto3) provides a Python API for AWS infrastructure services. Using the SDK for Python, you can build applications on top of Amazon S3, Amazon EC2, Amazon DynamoDB, and more.
 
 # what is Boto3
 
-> Boto3 allows us to write Python code that interacts with AWS services. It acts like an intermidiary between aus and the service we want to manage. It contains easy-to-use APIs to many AWS services.
+> Boto3 allows us to write Python code that interacts with AWS services. It acts like an intermidiary between us and the service we want to manage. It contains easy-to-use APIs to many AWS services.
 
 
 # Creating an IAM user
