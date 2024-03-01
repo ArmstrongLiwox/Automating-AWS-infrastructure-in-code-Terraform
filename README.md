@@ -112,6 +112,27 @@ aws --version
 ---
 ![accessed aws cli](images/accessed.jpg)
 
+![aws configure](<images/aws configure.jpg>)
+
+
+# Install Terraform
+
+![download terraform](<images/downloadl terraform.jpg>)
+
+![move file](<images/move to program files.jpg>)
+
+![copy path](<images/copy path.jpg>)
+
+![system variables](<images/path system variables.jpg>)
+
+![new path](images/path.jpg)
+
+![terraform -version](<images/terraform version.jpg>)
+
+## Terraform has been set up successfully
+
+
+
 # Create S3 bucket
 
 Create an S3 bucket to store Terraform state file.
