@@ -137,7 +137,7 @@ aws --version
 
 Create an S3 bucket to store Terraform state file.
 
-```armstrong-dev-terraform-bucket```
+```terr-cli-practice```
 
 S3 bucket names must be unique unique within a region partition.
  
@@ -190,7 +190,9 @@ We will use this bucket from Project-17 onwards.
 
 ![s3 create](<images/create s3.jpg>)
 
-![s3 created](<images/bucket created.jpg>)
+![s3 created](<images/bucket createdd.jpg>)
+
+![s3 confirmed](<images/s3 confirmed.jpg>)
 ---
 
 ## Make sure you can programmatically access your AWS account 
