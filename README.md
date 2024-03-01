@@ -186,7 +186,7 @@ We will use this bucket from Project-17 onwards.
 
 ![s3](images/s3.jpg)
 
-![s3 name](<images/s3 name.jpg>)
+![s3 name](<images/s3 namee.jpg>)
 
 ![s3 create](<images/create s3.jpg>)
 
