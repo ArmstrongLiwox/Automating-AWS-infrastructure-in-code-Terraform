@@ -200,7 +200,6 @@ We will use this bucket from Project-17 onwards.
 by running following commands in >python:
 
 ```
-
 s3 = boto3.resource('s3')
 for bucket in s3.buckets.all():
     print(bucket.name)
@@ -210,13 +209,20 @@ for bucket in s3.buckets.all():
 ```
 pip install boto3
 ```
+```
+ python.exe -m pip install --upgrade pip
+```
+
 ![install boto3](<images/pip install boto3.jpg>)
 ---
 ```
 python.exe -m pip install --upgrade pip
 ```
+![update boto 3](<images/update boto 3.jpg>)
+
 ![upgrade pip](<images/upgrade pip.jpg>)
 ---
+
 ```
 import boto3
 ```
@@ -349,7 +355,7 @@ We will create a directory structure via Visual Studio Code:
 
 ```
 provider "aws" {
-  region = "eu-central-1"
+  region = "us-east-1"
 }
 
 # Create VPC
@@ -367,9 +373,38 @@ resource "aws_vpc" "main" {
 ![main.tf content](<images/main.tf 2.jpg>)
 ---
 
-![terraform download](<images/terraform download.jpg>)
+```
+terraform init
+```
+![terraform error](<images/terraform error.jpg>)
+
+![terraform provider](<images/terraform providers.jpg>)
+
+![terraform vpc](<images/terraform vpc.jpg>)
+
+```
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "5.5.2"
+}
 
 
+# Create VPC
+resource "aws_vpc" "main" {
+  cidr_block                     = "172.16.0.0/16"
+  enable_dns_support             = "true"
+  enable_dns_hostnames           = "true"
+  enable_classiclink             = "false"
+  enable_classiclink_dns_support = "false"
+}
+
+```
+---
+
+
+![terraform initialized](<images/terraform initialized.jpg>)
+
+---
 
 
 
