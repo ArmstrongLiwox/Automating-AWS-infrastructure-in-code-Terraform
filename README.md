@@ -67,6 +67,8 @@ TERRAFORM_user
 
 password : ..........
 
+![change passwords](<images/change password.jpg>)
+
 [login details](<images/iam credentials.txt>)
 ---
 ![created user](<images/user created.jpg>)
@@ -93,12 +95,20 @@ password : ..........
 ---
 ![Alt text](<images/run cli.jpg>)
 ---
-![Alt text](<images/aws cli.jpg>)
+
 ---
+https://awscli.amazonaws.com/AWSCLIV2.msi
 
 ```
 msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
 ```
+```
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi /qn
+```
+```
+aws --version
+```
+![install aws cli](<images/install cli.jpg>)
 ---
 ![accessed aws cli](images/accessed.jpg)
 
