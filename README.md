@@ -1005,9 +1005,27 @@ preferred_number_of_public_subnets = 2
 
 # everything went fine...
 
+# ***Apply***
 
+![apply](images/apply.jpg)
+ 
+![applied](images/applied.jpg)
 
+![sub applied](images/appliedd.jpg)
 
+# ***Destroy***
+
+![destroy](images/destroyy.jpg)
+
+![destroyed](images/destroyedd.jpg)
+
+![terraform destroyed](images/destroyeddd.jpg)
+
+## We have learnt how to create and delete AWS Network Infrastructure programmatically with Terraform!
+
+In the next project we will expand the infrastructure further with more Terraform automation.
+
+![success](images/success.jpg)
 
 
 
