@@ -400,14 +400,90 @@ resource "aws_vpc" "main" {
 
 ```
 ---
-
-
 ![terraform initialized](<images/terraform initialized.jpg>)
+---
+```
+terraform plan
+```
+terraform shows error
+
+![plan error](<images/plan error.jpg>)
+
+
+# Terraform commands
+
+The available commands for execution are listed below.
+The primary workflow commands are given first, followed by
+less common or more advanced commands.
+Usage: terraform [global options] <subcommand> [args]
+
+
+## Main commands:
+
+1. terraform init:          Prepare your working directory for other commands
+
+ 1. terraform validate:      Check whether the configuration is valid
+
+ 1. terraform plan:          Show changes required by the current configuration
+
+ 1. terraform apply:         Create or update infrastructure
+
+ 1. terraform destroy:       Destroy previously-created infrastructure
+
+## All other commands:
+
+ 1. terraform console:       Try Terraform expressions at an interactive command prompt
+
+ 1. terraform fmt:          Reformat your configuration in the standard style
+
+ 1. terraform force-unlock:  Release a stuck lock on the current workspace
+
+ 1. terraform get:           Install or upgrade remote Terraform modules
+
+ 1. terraform graph:         Generate a Graphviz graph of the steps in an operation
+
+ 1. terraform import:        Associate existing infrastructure with a Terraform resource
+
+ 1. terraform login:         Obtain and save credentials for a remote host
+
+ 1. terraform logout:        Remove locally-stored credentials for a remote host
+
+ 1. terraform metadata:      Metadata related commands
+
+ 1. terraform output:        Show output values from your root module
+
+ 1. terraform providers:     Show the providers required for this configuration
+
+ 1. terraform refresh:       Update the state to match remote systems
+
+ 1. terraform show:          Show the current state or a saved plan
+
+ 1. terraform state:         Advanced state management
+
+ 1. terraform taint:         Mark a resource instance as not fully functional
+
+ 1. terraform test:          Execute integration tests for Terraform modules
+
+ 1. terraform untaint:       Remove the 'tainted' state from a resource instance
+
+ 1. terraform version:       Show the current Terraform version
+
+ 1. terraform workspace:     Workspace management
+
+## Global options (use these before the subcommand, if any):
+
+ 1. terraform -chdir=DIR:    Switch to a different working directory before executing the given subcommand.
+
+ 1. terraform -help:         Show this help output, or the help for a specified subcommand.
+
+ 1. terraform -version:      An alias for the "version" subcommand.
+---
 
 ---
 
+terraform validate shows errors
 
-
+![validate error](<images/validate error.jpg>)
 
 
 
