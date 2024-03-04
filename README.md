@@ -485,6 +485,30 @@ terraform validate shows errors
 
 ![validate error](<images/validate error.jpg>)
 
+let's impliment the recommended change
+
+terraform validate shows success
+
+![validate success](<images/validate success.jpg>)
+
+```
+terraform plan
+```
+![terraform plan](<images/terraform plan.jpg>)
+```
+terraform apply
+```
+VPC before terraform apply
+
+![vpc before apply](<images/vpc before.jpg>)
+
+![approve apply](<images/approve apply.jpg>)
+
+![apply success](<images/apply suuccess.jpg>)
+
+VPC after terraform apply
+
+![vpc after apply](<images/vpc after apply.jpg>)
 
 
 
